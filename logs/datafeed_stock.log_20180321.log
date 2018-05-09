@@ -1,0 +1,177 @@
+2018-03-21 12:07:09,998 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5fdef03a: startup date [Wed Mar 21 12:07:09 CST 2018]; root of context hierarchy
+2018-03-21 12:07:10,056 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [spring/applicationContext-common.xml]
+2018-03-21 12:07:11,154 - [main] - INFO  - (DefaultListableBeanFactory.java:754) - Overriding bean definition for bean 'springContextUtil': replacing [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\bin\com\lion\common\utils\SpringContextUtil.class]] with [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-common.xml]]
+2018-03-21 12:07:11,298 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/redis/redis.properties]
+2018-03-21 12:07:11,302 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/system/system.properties]
+2018-03-21 12:07:11,302 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/mq/mq.properties]
+2018-03-21 12:07:12,704 - [main] - WARN  - (Slf4JLogger.java:146) - Unknown channel option 'SO_LINGER' for channel '[id: 0x18632676]'
+2018-03-21 12:07:12,715 - [main] - INFO  - (MainApp.java:17) - 期货行情Client启动成功....
+2018-03-21 12:07:13,780 - [Thread-5] - INFO  - (NettyClient.java:64) - netty client 启动失败
+2018-03-21 12:09:10,956 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5fdef03a: startup date [Wed Mar 21 12:09:10 CST 2018]; root of context hierarchy
+2018-03-21 12:09:10,995 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [spring/applicationContext-common.xml]
+2018-03-21 12:09:11,181 - [main] - INFO  - (DefaultListableBeanFactory.java:754) - Overriding bean definition for bean 'springContextUtil': replacing [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\bin\com\lion\common\utils\SpringContextUtil.class]] with [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-common.xml]]
+2018-03-21 12:09:11,260 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/redis/redis.properties]
+2018-03-21 12:09:11,261 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/system/system.properties]
+2018-03-21 12:09:11,262 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/mq/mq.properties]
+2018-03-21 12:09:12,145 - [main] - WARN  - (Slf4JLogger.java:146) - Unknown channel option 'SO_LINGER' for channel '[id: 0xb8226f07]'
+2018-03-21 12:09:12,157 - [main] - INFO  - (MainApp.java:17) - 期货行情Client启动成功....
+2018-03-21 12:09:13,199 - [Thread-5] - INFO  - (NettyClient.java:64) - netty client 启动失败
+2018-03-21 12:09:48,672 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@79be0360: startup date [Wed Mar 21 12:09:48 CST 2018]; root of context hierarchy
+2018-03-21 12:09:48,718 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [spring/applicationContext-common.xml]
+2018-03-21 12:09:48,914 - [main] - INFO  - (DefaultListableBeanFactory.java:754) - Overriding bean definition for bean 'springContextUtil': replacing [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\bin\com\lion\common\utils\SpringContextUtil.class]] with [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-common.xml]]
+2018-03-21 12:09:49,006 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/redis/redis.properties]
+2018-03-21 12:09:49,006 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/system/system.properties]
+2018-03-21 12:09:49,007 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/mq/mq.properties]
+2018-03-21 12:09:50,268 - [main] - WARN  - (Slf4JLogger.java:146) - Unknown channel option 'SO_LINGER' for channel '[id: 0xd58b6194]'
+2018-03-21 12:09:50,287 - [main] - INFO  - (MainApp.java:17) - 期货行情Client启动成功....
+2018-03-21 12:10:23,138 - [Thread-5] - INFO  - (NettyClient.java:64) - netty client 启动失败
+2018-03-21 12:22:21,914 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5fdef03a: startup date [Wed Mar 21 12:22:21 CST 2018]; root of context hierarchy
+2018-03-21 12:22:21,950 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [spring/applicationContext-common.xml]
+2018-03-21 12:22:22,124 - [main] - INFO  - (DefaultListableBeanFactory.java:754) - Overriding bean definition for bean 'springContextUtil': replacing [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\bin\com\lion\common\utils\SpringContextUtil.class]] with [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-common.xml]]
+2018-03-21 12:22:22,199 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/redis/redis.properties]
+2018-03-21 12:22:22,201 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/system/system.properties]
+2018-03-21 12:22:22,201 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/mq/mq.properties]
+2018-03-21 12:22:23,244 - [main] - WARN  - (Slf4JLogger.java:146) - Unknown channel option 'SO_LINGER' for channel '[id: 0xfd0552b7]'
+2018-03-21 12:22:23,256 - [main] - INFO  - (MainApp.java:17) - 期货行情Client启动成功....
+2018-03-21 12:22:23,283 - [Thread-5] - INFO  - (NettyClient.java:60) - netty client 启动成功
+2018-03-21 12:23:36,235 - [nioEventLoopGroup-4-1] - WARN  - (Slf4JLogger.java:151) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:624)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:559)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:476)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+2018-03-21 12:24:41,815 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5fdef03a: startup date [Wed Mar 21 12:24:41 CST 2018]; root of context hierarchy
+2018-03-21 12:24:41,854 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [spring/applicationContext-common.xml]
+2018-03-21 12:24:42,033 - [main] - INFO  - (DefaultListableBeanFactory.java:754) - Overriding bean definition for bean 'springContextUtil': replacing [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\bin\com\lion\common\utils\SpringContextUtil.class]] with [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-common.xml]]
+2018-03-21 12:24:42,119 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/redis/redis.properties]
+2018-03-21 12:24:42,120 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/system/system.properties]
+2018-03-21 12:24:42,121 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/hfds/%e8%a1%8c%e6%83%85/MdQuotationClient/bin/mq/mq.properties]
+2018-03-21 12:24:43,013 - [main] - WARN  - (Slf4JLogger.java:146) - Unknown channel option 'SO_LINGER' for channel '[id: 0x8125057c]'
+2018-03-21 12:24:43,025 - [main] - INFO  - (MainApp.java:17) - 期货行情Client启动成功....
+2018-03-21 12:24:43,055 - [Thread-5] - INFO  - (NettyClient.java:60) - netty client 启动成功
+2018-03-21 12:24:43,392 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:41.602}]
+2018-03-21 12:24:43,406 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:41.731}]
+2018-03-21 12:24:43,496 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:41.798}]
+2018-03-21 12:24:43,504 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:41.806}]
+2018-03-21 12:24:43,795 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:42.085}]
+2018-03-21 12:24:43,895 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 808|C|futureCode:[{6B1806}],markettime:[{2018-03-21 12:24:42.240}]
+2018-03-21 12:24:44,095 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 808|C|futureCode:[{6B1806}],markettime:[{2018-03-21 12:24:42.414}]
+2018-03-21 12:24:44,106 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:42.416}]
+2018-03-21 12:24:44,594 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 808|C|futureCode:[{6B1806}],markettime:[{2018-03-21 12:24:42.914}]
+2018-03-21 12:24:44,697 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:43.057}]
+2018-03-21 12:24:44,711 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:43.057}]
+2018-03-21 12:24:44,716 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:43.018}]
+2018-03-21 12:24:44,795 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:43.084}]
+2018-03-21 12:24:44,833 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:43.153}]
+2018-03-21 12:24:44,895 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:43.248}]
+2018-03-21 12:24:44,996 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:43.263}]
+2018-03-21 12:24:45,295 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:43.585}]
+2018-03-21 12:24:45,371 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:43.731}]
+2018-03-21 12:24:45,398 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 808|C|futureCode:[{6B1806}],markettime:[{2018-03-21 12:24:43.732}]
+2018-03-21 12:24:45,399 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:43.748}]
+2018-03-21 12:24:45,495 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:43.757}]
+2018-03-21 12:24:45,810 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:44.119}]
+2018-03-21 12:24:45,996 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:44.281}]
+2018-03-21 12:24:46,316 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:44.593}]
+2018-03-21 12:24:46,495 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:44.758}]
+2018-03-21 12:24:46,797 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:45.084}]
+2018-03-21 12:24:47,149 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:45.394}]
+2018-03-21 12:24:47,218 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:45.532}]
+2018-03-21 12:24:47,299 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:45.586}]
+2018-03-21 12:24:47,324 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:45.682}]
+2018-03-21 12:24:47,395 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:45.736}]
+2018-03-21 12:24:47,405 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:45.682}]
+2018-03-21 12:24:47,915 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:46.218}]
+2018-03-21 12:24:49,021 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:47.329}]
+2018-03-21 12:24:49,206 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:47.550}]
+2018-03-21 12:24:49,552 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 792|C|futureCode:[{BO1805}],markettime:[{2018-03-21 12:24:47.913}]
+2018-03-21 12:24:49,579 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 792|C|futureCode:[{BO1805}],markettime:[{2018-03-21 12:24:47.913}]
+2018-03-21 12:24:49,769 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:48.130}]
+2018-03-21 12:24:49,807 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:48.141}]
+2018-03-21 12:24:49,908 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:48.230}]
+2018-03-21 12:24:49,995 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:48.303}]
+2018-03-21 12:24:50,005 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:48.293}]
+2018-03-21 12:24:51,209 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:49.508}]
+2018-03-21 12:24:51,712 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:50.049}]
+2018-03-21 12:24:52,580 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 792|C|futureCode:[{BO1805}],markettime:[{2018-03-21 12:24:50.886}]
+2018-03-21 12:24:52,596 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:50.899}]
+2018-03-21 12:24:52,597 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 808|C|futureCode:[{6B1806}],markettime:[{2018-03-21 12:24:50.877}]
+2018-03-21 12:24:52,605 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:50.885}]
+2018-03-21 12:24:52,718 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:51.050}]
+2018-03-21 12:24:52,894 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:51.186}]
+2018-03-21 12:24:52,914 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:51.272}]
+2018-03-21 12:24:53,094 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:51.384}]
+2018-03-21 12:24:53,534 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:51.845}]
+2018-03-21 12:24:53,605 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:51.887}]
+2018-03-21 12:24:54,123 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:52.425}]
+2018-03-21 12:24:54,221 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:24:52.497}]
+2018-03-21 12:24:54,297 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:52.639}]
+2018-03-21 12:24:54,319 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:52.580}]
+2018-03-21 12:24:54,594 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:52.909}]
+2018-03-21 12:24:54,679 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:53.042}]
+2018-03-21 12:24:54,697 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:53.056}]
+2018-03-21 12:24:55,195 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:53.555}]
+2018-03-21 12:24:55,696 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 808|C|futureCode:[{6B1806}],markettime:[{2018-03-21 12:24:54.022}]
+2018-03-21 12:24:55,805 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:54.115}]
+2018-03-21 12:24:55,941 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:54.302}]
+2018-03-21 12:24:56,004 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:54.312}]
+2018-03-21 12:24:56,598 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:54.945}]
+2018-03-21 12:24:56,694 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:55.024}]
+2018-03-21 12:24:56,995 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:55.327}]
+2018-03-21 12:24:57,096 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:24:55.421}]
+2018-03-21 12:24:57,206 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:55.559}]
+2018-03-21 12:24:57,443 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:55.803}]
+2018-03-21 12:24:57,505 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:55.804}]
+2018-03-21 12:24:57,595 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:55.949}]
+2018-03-21 12:24:57,606 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:55.949}]
+2018-03-21 12:25:00,405 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:58.724}]
+2018-03-21 12:25:00,904 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:24:59.217}]
+2018-03-21 12:25:01,800 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:00.107}]
+2018-03-21 12:25:01,912 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:00.220}]
+2018-03-21 12:25:01,995 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:00.269}]
+2018-03-21 12:25:02,004 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:00.301}]
+2018-03-21 12:25:02,295 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:00.636}]
+2018-03-21 12:25:03,040 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{C1805}],markettime:[{2018-03-21 12:25:01.401}]
+2018-03-21 12:25:03,161 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{C1805}],markettime:[{2018-03-21 12:25:01.423}]
+2018-03-21 12:25:05,005 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:03.343}]
+2018-03-21 12:25:05,095 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:03.447}]
+2018-03-21 12:25:05,122 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:03.452}]
+2018-03-21 12:25:05,125 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:25:03.431}]
+2018-03-21 12:25:05,207 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:03.523}]
+2018-03-21 12:25:05,805 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:04.125}]
+2018-03-21 12:25:05,979 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:04.338}]
+2018-03-21 12:25:06,495 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 808|C|futureCode:[{6B1806}],markettime:[{2018-03-21 12:25:04.845}]
+2018-03-21 12:25:06,715 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:25:05.057}]
+2018-03-21 12:25:06,795 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:05.124}]
+2018-03-21 12:25:09,715 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:25:08.018}]
+2018-03-21 12:25:09,952 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:08.314}]
+2018-03-21 12:25:10,010 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:08.314}]
+2018-03-21 12:25:10,740 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{C1805}],markettime:[{2018-03-21 12:25:09.041}]
+2018-03-21 12:25:11,194 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:09.536}]
+2018-03-21 12:25:11,994 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:10.272}]
+2018-03-21 12:25:12,495 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:10.773}]
+2018-03-21 12:25:13,100 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:11.459}]
+2018-03-21 12:25:14,691 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:13.051}]
+2018-03-21 12:25:14,706 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:13.061}]
+2018-03-21 12:25:16,042 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:14.289}]
+2018-03-21 12:25:16,405 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:14.672}]
+2018-03-21 12:25:16,405 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:14.672}]
+2018-03-21 12:25:16,708 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:15.016}]
+2018-03-21 12:25:17,595 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:15.906}]
+2018-03-21 12:25:17,699 - [pool-2-thread-5] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:15.987}]
+2018-03-21 12:25:18,095 - [pool-2-thread-2] - INFO  - (ProcessRtnMdMsg.java:60) - 776|C|futureCode:[{6A1806}],markettime:[{2018-03-21 12:25:16.387}]
+2018-03-21 12:25:19,345 - [pool-2-thread-1] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:25:17.638}]
+2018-03-21 12:25:19,615 - [pool-2-thread-3] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{QM1805}],markettime:[{2018-03-21 12:25:17.920}]
+2018-03-21 12:25:20,028 - [pool-2-thread-4] - INFO  - (ProcessRtnMdMsg.java:60) - 784|C|futureCode:[{GC1804}],markettime:[{2018-03-21 12:25:18.307}]

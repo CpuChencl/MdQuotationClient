@@ -1,0 +1,216 @@
+2018-03-29 16:32:26,362 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@5fdef03a: startup date [Thu Mar 29 16:32:26 CST 2018]; root of context hierarchy
+2018-03-29 16:32:26,413 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [C:\hfds\行情\MdQuotationClient\spring\applicationContext-common.xml]
+2018-03-29 16:35:44,389 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@5fdef03a: startup date [Thu Mar 29 16:35:44 CST 2018]; root of context hierarchy
+2018-03-29 16:35:44,423 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [C:\hfds\行情\MdQuotationClient\spring\applicationContext-common.xml]
+2018-03-29 16:36:10,914 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@5fdef03a: startup date [Thu Mar 29 16:36:10 CST 2018]; root of context hierarchy
+2018-03-29 16:36:10,957 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [C:\hfds\行情\MdQuotationClient\config\spring\applicationContext-common.xml]
+2018-03-29 16:36:11,651 - [main] - INFO  - (DefaultListableBeanFactory.java:754) - Overriding bean definition for bean 'springContextUtil': replacing [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\bin\com\lion\common\utils\SpringContextUtil.class]] with [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\config\spring\applicationContext-common.xml]]
+2018-03-29 16:36:11,766 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/redis/redis.properties]
+2018-03-29 16:36:11,766 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/system/system.properties]
+2018-03-29 16:36:11,767 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/mq/mq.properties]
+2018-03-29 16:36:12,992 - [main] - WARN  - (AbstractApplicationContext.java:489) - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nettyClient': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.sp.push.PushThread com.lion.frame.netty.client.NettyClient.pushThread; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pushThread': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.frame.websocket.SocketServer com.lion.sp.push.PushThread.socketServer; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'socketServer': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.sp.service.MdQuotationImpl com.lion.frame.websocket.SocketServer.mdQuotationImpl; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MdQuotation': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.MdRedisDao com.lion.sp.service.MdQuotationImpl.mdRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mdRedisDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:301)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:140)
+	at org.springframework.context.support.FileSystemXmlApplicationContext.<init>(FileSystemXmlApplicationContext.java:84)
+	at com.lion.main.MainApp.main(MainApp.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.sp.push.PushThread com.lion.frame.netty.client.NettyClient.pushThread; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pushThread': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.frame.websocket.SocketServer com.lion.sp.push.PushThread.socketServer; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'socketServer': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.sp.service.MdQuotationImpl com.lion.frame.websocket.SocketServer.mdQuotationImpl; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MdQuotation': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.MdRedisDao com.lion.sp.service.MdQuotationImpl.mdRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mdRedisDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:522)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pushThread': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.frame.websocket.SocketServer com.lion.sp.push.PushThread.socketServer; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'socketServer': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.sp.service.MdQuotationImpl com.lion.frame.websocket.SocketServer.mdQuotationImpl; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MdQuotation': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.MdRedisDao com.lion.sp.service.MdQuotationImpl.mdRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mdRedisDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:301)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:494)
+	... 15 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.frame.websocket.SocketServer com.lion.sp.push.PushThread.socketServer; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'socketServer': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.sp.service.MdQuotationImpl com.lion.frame.websocket.SocketServer.mdQuotationImpl; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MdQuotation': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.MdRedisDao com.lion.sp.service.MdQuotationImpl.mdRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mdRedisDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:522)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'socketServer': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.sp.service.MdQuotationImpl com.lion.frame.websocket.SocketServer.mdQuotationImpl; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MdQuotation': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.MdRedisDao com.lion.sp.service.MdQuotationImpl.mdRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mdRedisDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:301)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:494)
+	... 28 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.sp.service.MdQuotationImpl com.lion.frame.websocket.SocketServer.mdQuotationImpl; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MdQuotation': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.MdRedisDao com.lion.sp.service.MdQuotationImpl.mdRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mdRedisDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:522)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	... 39 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MdQuotation': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.MdRedisDao com.lion.sp.service.MdQuotationImpl.mdRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mdRedisDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:301)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:494)
+	... 41 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.MdRedisDao com.lion.sp.service.MdQuotationImpl.mdRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mdRedisDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:522)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	... 52 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mdRedisDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:301)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:494)
+	... 54 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lion.redis.dao.ContractRedisDao com.lion.redis.dao.MdRedisDao.contractRedisDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:522)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	... 65 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contractRedisDao': Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:407)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1021)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:494)
+	... 67 more
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:162)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:251)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:58)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:128)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:91)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:78)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:178)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:153)
+	at org.springframework.data.redis.core.RedisTemplate.keys(RedisTemplate.java:720)
+	at com.lion.redis.dao.BaseRedisDao.keys(BaseRedisDao.java:28)
+	at com.lion.redis.dao.ContractRedisDao.getRedisContractList1(ContractRedisDao.java:94)
+	at com.lion.redis.dao.ContractRedisDao.loadData(ContractRedisDao.java:62)
+	at com.lion.redis.dao.ContractRedisDao.init(ContractRedisDao.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:349)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:300)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:133)
+	... 79 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:50)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:88)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:12)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:155)
+	... 98 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:148)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:75)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1572)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:69)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:836)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:361)
+	at redis.clients.util.Pool.getResource(Pool.java:48)
+	... 101 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:142)
+	... 108 more
+2018-03-29 16:36:39,018 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@5fdef03a: startup date [Thu Mar 29 16:36:39 CST 2018]; root of context hierarchy
+2018-03-29 16:36:39,054 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [C:\hfds\行情\MdQuotationClient\config\spring\applicationContext-common.xml]
+2018-03-29 16:36:39,662 - [main] - INFO  - (DefaultListableBeanFactory.java:754) - Overriding bean definition for bean 'springContextUtil': replacing [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\bin\com\lion\common\utils\SpringContextUtil.class]] with [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\config\spring\applicationContext-common.xml]]
+2018-03-29 16:36:39,752 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/redis/redis.properties]
+2018-03-29 16:36:39,757 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/system/system.properties]
+2018-03-29 16:36:39,758 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/mq/mq.properties]
+2018-03-29 16:36:40,903 - [main] - WARN  - (Slf4JLogger.java:146) - Unknown channel option 'SO_LINGER' for channel '[id: 0x7afc4bee]'
+2018-03-29 16:36:40,913 - [main] - INFO  - (MainApp.java:18) - 期货行情Client启动成功....
+2018-03-29 16:36:43,936 - [Thread-5] - INFO  - (NettyClient.java:61) - netty client 启动成功
+2018-03-29 16:39:12,201 - [nioEventLoopGroup-4-1] - WARN  - (Slf4JLogger.java:151) - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:624)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:559)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:476)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+2018-03-29 16:39:46,711 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@5fdef03a: startup date [Thu Mar 29 16:39:46 CST 2018]; root of context hierarchy
+2018-03-29 16:39:46,749 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [C:\hfds\行情\MdQuotationClient\config\spring\applicationContext-common.xml]
+2018-03-29 16:39:47,245 - [main] - INFO  - (DefaultListableBeanFactory.java:754) - Overriding bean definition for bean 'springContextUtil': replacing [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\bin\com\lion\common\utils\SpringContextUtil.class]] with [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\config\spring\applicationContext-common.xml]]
+2018-03-29 16:39:47,327 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/redis/redis.properties]
+2018-03-29 16:39:47,328 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/system/system.properties]
+2018-03-29 16:39:47,329 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/mq/mq.properties]
+2018-03-29 16:39:48,260 - [main] - WARN  - (Slf4JLogger.java:146) - Unknown channel option 'SO_LINGER' for channel '[id: 0x78a68363]'
+2018-03-29 16:39:48,271 - [main] - INFO  - (MainApp.java:18) - 期货行情Client启动成功....
+2018-03-29 16:39:48,290 - [Thread-5] - INFO  - (NettyClient.java:61) - netty client 启动成功
+2018-03-29 18:07:41,623 - [main] - INFO  - (AbstractApplicationContext.java:515) - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@5fdef03a: startup date [Thu Mar 29 18:07:41 CST 2018]; root of context hierarchy
+2018-03-29 18:07:41,665 - [main] - INFO  - (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [C:\hfds\行情\MdQuotationClient\config\spring\applicationContext-common.xml]
+2018-03-29 18:07:41,980 - [main] - INFO  - (DefaultListableBeanFactory.java:754) - Overriding bean definition for bean 'springContextUtil': replacing [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\bin\com\lion\common\utils\SpringContextUtil.class]] with [Generic bean: class [com.lion.common.utils.SpringContextUtil]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\hfds\行情\MdQuotationClient\config\spring\applicationContext-common.xml]]
+2018-03-29 18:07:42,077 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/redis/redis.properties]
+2018-03-29 18:07:42,078 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/system/system.properties]
+2018-03-29 18:07:42,079 - [main] - INFO  - (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:C:/hfds/行情/MdQuotationClient/config/mq/mq.properties]
+2018-03-29 18:07:43,045 - [main] - WARN  - (Slf4JLogger.java:146) - Unknown channel option 'SO_LINGER' for channel '[id: 0x70dc3f1e]'
+2018-03-29 18:07:43,056 - [main] - INFO  - (MainApp.java:18) - 期货行情Client启动成功....
+2018-03-29 18:07:46,075 - [Thread-5] - INFO  - (NettyClient.java:61) - netty client 启动成功
