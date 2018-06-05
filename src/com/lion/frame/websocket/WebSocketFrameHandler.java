@@ -143,6 +143,24 @@ public class WebSocketFrameHandler extends SimpleChannelInboundHandler<WebSocket
 		return head;
 	}
 	
+//	@Override
+//	public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
+//	}
+//
+//	@Override
+//	public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
+//	}
+//
+//	@Override
+//	public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
+//	}
+
+//	@Override
+//	public void channelActive(ChannelHandlerContext ctx) throws Exception {
+//		Channel channel = ctx.channel();
+//		ChannelManage.addChannel(channel);
+//		log.info("Client：[{}]建立连接", new String[] { channel.remoteAddress().toString() });
+//	}
 	@Override
 	public void channelInactive(ChannelHandlerContext ctx) throws Exception {
 		Channel channel = ctx.channel();
